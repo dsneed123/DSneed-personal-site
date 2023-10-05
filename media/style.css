@@ -1,0 +1,124 @@
+body {
+    
+    
+    background-color: #2a9df4;
+    margin:0px;
+
+  }
+#resume{
+    background-color: blue;
+    
+
+}
+#resume > a{
+    color:white;
+}
+.body-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Horizontal centering */
+    gap: 25px; /* Space between items */
+    
+}
+
+.body-items > div {
+    border: 3px solid black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vertical centering */
+    padding: 25px; /* Optional padding for each div */
+    width: 80%;
+    background-color: #bbe0f3;
+}
+h1{
+    font-size: 40pt;
+    
+}
+
+
+.menu-bar {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Distribute items evenly */
+    background-color: #494949; /* Add background color */
+    padding: 10px; /* Add some padding for spacing */
+    color: #fff; /* Text color */
+    align-items: center;
+    margin-bottom: 10px;
+    
+    
+}
+
+.menu-list {
+    list-style: none; /* Remove list bullets */
+    display: flex; /* Use flexbox for list items */
+    gap: 10px; /* Add spacing between items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.menu-list li {
+    padding: 5px 10px; /* Add padding to each list item */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #555; /* Background color for each item */
+    cursor: pointer; /* Add pointer cursor on hover */
+    height: 100%;
+    
+}
+
+.menu-list li:hover {
+    background-color: #03254c; /* Background color on hover */
+}
+/* Your existing CSS code */
+
+.profile-picture {
+    border-radius: 50%;
+    width: 350px;
+    margin: 10px;
+}
+
+.console-container {
+    font-family: Khula;
+    font-size: 4em;
+    text-align: center;
+    height: 200px;
+    width: 600px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 50%; /* Adjust the top position */
+    left: 50%; /* Adjust the left position */
+    transform: translate(-50%, -50%); /* Center the container */
+}
+
+/* Rest of your CSS code */
+
+/* Additional styles you may want to add */
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+
+  font-family:Khula;
+  font-size:4em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
