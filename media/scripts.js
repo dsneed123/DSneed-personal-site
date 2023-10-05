@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  consoleText(['Hello Im Davis', 'I am a web Developer', 'Welcome to my site'], 'text', ['tomato', 'rebeccapurple', 'lightblue']);
+  consoleText(['I am Davis Sneed', 'This is my website', 'welcome'], 'text', ['black', 'black', 'black']);
 });
 
 function consoleText(words, id, colors) {

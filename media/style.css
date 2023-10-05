@@ -33,7 +33,7 @@ body {
     background-color: #bbe0f3;
 }
 h1{
-    font-size: 40pt;
+    font-size: 20pt;
     
 }
 
@@ -75,28 +75,8 @@ h1{
 .profile-picture {
     border-radius: 50%;
     width: 350px;
-    margin: 10px;
+
 }
-
-.console-container {
-    font-family: Khula;
-    font-size: 4em;
-    text-align: center;
-    height: 200px;
-    width: 600px;
-    display: block;
-    position: absolute;
-    color: white;
-    top: 50%; /* Adjust the top position */
-    left: 50%; /* Adjust the left position */
-    transform: translate(-50%, -50%); /* Center the container */
-}
-
-/* Rest of your CSS code */
-
-/* Additional styles you may want to add */
-
-
 
 .hidden {
   opacity:0;
@@ -109,13 +89,11 @@ h1{
   height:200px;
   width:600px;
   display:block;
-  position:absolute;
+
   color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
+
+
+  
 }
 .console-underscore {
    display:inline-block;
