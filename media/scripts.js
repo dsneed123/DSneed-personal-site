@@ -1,5 +1,6 @@
-// function([string1, string2],target id,[color1,color2])    
-consoleText(['Hello World.', 'Console Text', 'Made with Love.'], 'text',['tomato','rebeccapurple','lightblue']);
+document.addEventListener('DOMContentLoaded', function() {
+  consoleText(['Hello Im Davis', 'I am a web Developer', 'Welcome to my site'], 'text', ['tomato', 'rebeccapurple', 'lightblue']);
+});
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

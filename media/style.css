@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
 body {
     
     
@@ -95,13 +96,13 @@ h1{
 
 /* Additional styles you may want to add */
 
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
 
 .hidden {
   opacity:0;
 }
 .console-container {
-
+ 
   font-family:Khula;
   font-size:4em;
   text-align:center;
