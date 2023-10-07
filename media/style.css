@@ -2,10 +2,12 @@
 body {
     
     
-    background-color: #2a9df4;
+   
     margin:0px;
+    background-color: rgb(0, 0, 0);
+}
 
-  }
+
 #resume{
     background-color: blue;
     
@@ -19,25 +21,53 @@ body {
     flex-wrap: wrap;
     justify-content: center; /* Horizontal centering */
     gap: 25px; /* Space between items */
+
     
 }
 
-.body-items > div {
-    border: 3px solid black;
-    border-radius: 12px;
+.body-items  div:not(.console-underscore, .console-container) {
     display: flex;
     flex-direction: column;
     align-items: center; /* Vertical centering */
     padding: 25px; /* Optional padding for each div */
-    width: 80%;
-    background-color: #bbe0f3;
-}
-h1{
-    font-size: 20pt;
+
     
 }
-
-
+.about-container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    
+}
+.About{
+    background-color: rgb(35, 35, 35);
+    border-radius: 12px;
+    border: 5px ridge orange;
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-size: 40pt;
+    font-family: 'Autour One', sans-serif;
+}
+h2{
+    font-size: 25pt;
+    font-family: 'Autour One', sans-serif;
+}
+h3{
+    font-size: 25pt;
+    font-family: 'Autour One', sans-serif;
+}
+p{
+    font-size: 15pt;
+    font-family: 'Autour One', sans-serif;
+}
+li:not(.menu-list li){
+    font-size: 20pt;
+    list-style: inside;
+    color : #494949;
+}
 .menu-bar {
     display: flex; /* Use flexbox */
     justify-content: center; /* Distribute items evenly */
@@ -45,11 +75,15 @@ h1{
     padding: 10px; /* Add some padding for spacing */
     color: #fff; /* Text color */
     align-items: center;
-    margin-bottom: 10px;
+    padding: 0%;
+   
     
     
 }
-
+.underlined{
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
 .menu-list {
     list-style: none; /* Remove list bullets */
     display: flex; /* Use flexbox for list items */
@@ -60,44 +94,163 @@ h1{
 
 .menu-list li {
     padding: 5px 10px; /* Add padding to each list item */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #555; /* Background color for each item */
+    background-color: #494949; /* Background color for each item */
     cursor: pointer; /* Add pointer cursor on hover */
     height: 100%;
+    font-size:24pt;
+    margin:0px;
+    height: 40px;
     
 }
-
-.menu-list li:hover {
-    background-color: #03254c; /* Background color on hover */
+.menu-list a{
+    color:white;
+    text-decoration: none;
 }
-/* Your existing CSS code */
+.menu-list li:hover {
+    color:black;
+    background-color: #000000; /* Background color on hover */
+
+
+}
+.title {
+    position: relative;
+    width: 100%;
+
+    margin:0px;
+}
+
+.title img {
+    width: 100%;
+    z-index: -1; /* Push the image to the background */
+    height : 800px;
+    object-fit: cover;
+}
+
+.title h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Add a background with some transparency for readability */
+    
+    color: white;
+    font-size: 80px;
+}
+
+
+  
+  /* Change the color of the underline */
 
 .profile-picture {
     border-radius: 50%;
-    width: 350px;
-
+    width: 200px;
+    
+    border: 5px solid orange;
 }
 
 .hidden {
   opacity:0;
 }
-.console-container {
- 
-  font-family:Khula;
-  font-size:4em;
-  text-align:center;
-  height:200px;
-  width:600px;
-  display:block;
-
-  color:white;
-
-
-  
+.education-container{
+    background-color: rgb(0, 0, 0);
+    margin:0px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    margin-bottom: 0px;
 }
-.console-underscore {
-   display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
+.education{
+    border-radius: 12px;
+    border: 5px solid orange;
+    background-color: rgb(0, 0, 0);
+}
+.education > li{
+    color:white;
+}
+.skills-container{
+    margin-top: -10px;
+    background-color: rgb(0, 0, 0);
+    margin:0px;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.Skills{
+    border-radius: 12px;
+    border: 5px solid orange;
+    background-color: rgb(0, 0, 0);
+}
+.experience-container {
+    background-color: rgb(33, 33, 33);
+    margin: 0;
+    padding: 20px; /* Add padding for spacing */
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between; /* Align items horizontally */
+    align-items: flex-start; /* Align items vertically at the top */
+}
+
+.experience {
+    border-radius: 12px;
+    background-color: rgb(122, 119, 119);
+    border: 5px solid orange;
+    flex: 1; /* Allow the experience container to grow to fill available space */
+}
+
+.experience-item {
+    display: flex; /* Use flexbox to control the layout of h4 and p elements */
+    justify-content: space-between; /* Create space between left and right content */
+    padding: 20px; /* Add padding for spacing */
+    border-bottom: 3px solid orange; /* Add a border between items */
+}
+
+.left-content {
+    flex: 1; /* Allow left content to grow to fill available space */
+}
+
+.right-content {
+    flex: 2; /* Allow right content to grow to fill available space (adjust as needed) */
+}
+
+.experience-item h4 {
+    font-size: 24px;
+    text-align: left; /* Align the experience title to the left */
+    margin: 0; /* Remove default margin */
+}
+
+.experience-item p {
+    font-size: 16px;
+    text-align: left; /* Align the experience details to the left */
+    margin: 0; /* Remove default margin */
+}
+
+.links-container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.links {
+    display: flex;
+    justify-content: space-between; /* To evenly space the two sections horizontally */
+}
+
+.recent-projects-container{
+    background-color: rgb(33, 33, 33);
+    margin:0px;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.recent-projects{
+    border-radius: 12px;
+    border: 5px solid orange;
+    background-color: rgb(33, 33, 33);
+}
+.recent-projects a{
+    color:white;
+    font-size: 25pt;
+    color:orange;
 }
