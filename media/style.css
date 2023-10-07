@@ -63,11 +63,7 @@ p{
     font-size: 15pt;
     font-family: 'Autour One', sans-serif;
 }
-li:not(.menu-list li){
-    font-size: 20pt;
-    list-style: inside;
-    color : #494949;
-}
+
 .education li {
     color :white;
 }
