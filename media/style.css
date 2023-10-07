@@ -68,7 +68,7 @@ li:not(.menu-list li){
     list-style: inside;
     color : #494949;
 }
-.education > li {
+.education li {
     color :white;
 }
 .menu-bar {
