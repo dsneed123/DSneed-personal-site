@@ -216,6 +216,7 @@ li:not(.menu-list li){
     font-size: 24px;
     text-align: left; /* Align the experience title to the left */
     margin: 0; /* Remove default margin */
+    font-family: 'Autour One', sans-serif;
 }
 
 .experience-item p {
