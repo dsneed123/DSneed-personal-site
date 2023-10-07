@@ -68,6 +68,9 @@ li:not(.menu-list li){
     list-style: inside;
     color : #494949;
 }
+.education > li {
+    color :white;
+}
 .menu-bar {
     display: flex; /* Use flexbox */
     justify-content: center; /* Distribute items evenly */
