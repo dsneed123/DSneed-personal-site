@@ -251,6 +251,10 @@ li:not(.menu-list li){
     display: flex;
     justify-content: space-between; /* To evenly space the two sections horizontally */
 }
+.links a{
+    font-size: 15pt;
+    color: white;
+}
 
 .recent-projects-container{
     background-color: rgb(33, 33, 33);
