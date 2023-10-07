@@ -174,8 +174,10 @@ p{
     border: 5px solid orange;
     background-color: rgb(0, 0, 0);
 }
-.education > li{
+.education li{
     color:white;
+    font-family: 'Autour One', sans-serif;
+    font-size: 20px;
 }
 .skills-container{
     margin-top: -10px;
